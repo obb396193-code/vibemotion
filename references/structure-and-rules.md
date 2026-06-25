@@ -5,7 +5,7 @@
 ## 1. 结构契约
 ```html
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <!-- 需要付费插件(全免费)就在这里加 SplitText/DrawSVG/MorphSVG… 见 gsap-plugins.md -->
   <script src="https://cdn.jsdelivr.net/npm/@hyperframes/core/dist/hyperframe.runtime.iife.js"></script>
   <link rel="stylesheet" href="<主题>.css">
