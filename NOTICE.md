@@ -31,3 +31,10 @@ repo, keep this file.
 - **HyperFrames** runtime — `@hyperframes/core` (loaded via CDN in compositions).
 - **GSAP** + plugins (SplitText / DrawSVG / MorphSVG / MotionPath) — free since the
   2024 Webflow acquisition; loaded via CDN.
+
+## Route-B realistic-UI example (`examples/routeB-realistic-ui/`)
+- Fonts: **Hanken Grotesk** — SIL OFL 1.1 — https://fonts.google.com/specimen/Hanken+Grotesk
+- Icons: **Phosphor Icons** (paper-plane-tilt, microphone, sparkle, list-checks…) — MIT — https://github.com/phosphor-icons/core
+- Audio (bgm/click/type `.mp3`) is **intentionally not included** in this repo (licensing; the
+  route's own guidance is "no audio"). Supply your own if you want sound.
+

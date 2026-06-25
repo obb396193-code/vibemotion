@@ -1,0 +1,74 @@
+<template id="p2-template">
+<div id="p2-root" data-composition-id="p2" data-width="1080" data-height="1920" data-duration="5">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<style>
+@font-face{font-family:'Hanken Grotesk';font-weight:400;font-display:block;src:url(fonts/HankenGrotesk-400.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Hanken Grotesk';font-weight:500;font-display:block;src:url(fonts/HankenGrotesk-500.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+@font-face{font-family:'Hanken Grotesk';font-weight:700;font-display:block;src:url(fonts/HankenGrotesk-700.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F;}
+#p2-root{position:absolute;inset:0;overflow:hidden;
+  --bg:#F2EEE7;--surface:#FFFFFF;--ink:#23211C;--ink2:#9A9385;--line:#EBE5DC;--accent:#CC785C;--soft:#F6E9E2;
+  font-family:'Hanken Grotesk','Noto Sans SC',sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;}
+#p2-root *{box-sizing:border-box;margin:0;}
+#p2-root .hdr{position:absolute;top:0;left:0;right:0;height:150px;display:flex;align-items:center;gap:22px;padding:0 60px;border-bottom:1px solid var(--line);background:rgba(242,238,231,.82);}
+#p2-root .logo{width:62px;height:62px;border-radius:18px;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--accent);}
+#p2-root .logo svg{width:38px;height:38px;}
+#p2-root .htit{font-weight:700;font-size:40px;letter-spacing:-.01em;}
+#p2-root .hsub{font-size:24px;color:var(--ink2);font-weight:400;margin-top:2px;}
+#p2-root .menu{margin-left:auto;color:var(--ink2);}
+#p2-root .menu svg{width:46px;height:46px;}
+#p2-root .ubub{position:absolute;right:60px;top:300px;max-width:760px;background:var(--accent);color:#fff;border-radius:30px 8px 30px 30px;padding:34px 42px;font-size:40px;line-height:1.4;font-weight:500;box-shadow:0 16px 40px -18px rgba(204,120,92,.7);}
+#p2-root .airow{position:absolute;left:60px;top:560px;display:flex;gap:26px;align-items:flex-start;}
+#p2-root .avatar{width:78px;height:78px;flex:0 0 78px;border-radius:22px;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--accent);}
+#p2-root .avatar svg{width:46px;height:46px;}
+#p2-root .think{background:var(--surface);border:1px solid var(--line);border-radius:8px 30px 30px 30px;padding:38px 44px;box-shadow:0 2px 8px rgba(40,30,20,.04),0 30px 60px -42px rgba(40,30,20,.2);min-width:560px;}
+#p2-root .thinkline{display:flex;align-items:center;gap:18px;font-size:36px;color:var(--ink2);font-weight:400;}
+#p2-root .dots{display:flex;gap:12px;margin-left:6px;}
+#p2-root .dot{width:18px;height:18px;border-radius:50%;background:var(--accent);}
+#p2-root .skel{height:26px;border-radius:13px;background:linear-gradient(90deg,#EFE9E0 0%,#F7F2EB 50%,#EFE9E0 100%);background-size:300% 100%;margin-top:30px;}
+#p2-root .sk1{width:520px;}#p2-root .sk2{width:430px;}#p2-root .sk3{width:480px;}
+</style>
+
+<div class="hdr">
+  <div class="logo"><svg viewBox="0 0 256 256" fill="currentColor"><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144Z"/></svg></div>
+  <div><div class="htit">AI 助手</div><div class="hsub">正在思考…</div></div>
+  <div class="menu"><svg viewBox="0 0 256 256" fill="currentColor"><path d="M128,96a32,32,0,1,0,32,32A32,32,0,0,0,128,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,144ZM48,96a32,32,0,1,0,32,32A32,32,0,0,0,48,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,48,144ZM208,96a32,32,0,1,0,32,32A32,32,0,0,0,208,96Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,208,144Z"/></svg></div>
+</div>
+
+<div class="ubub" id="ubub">帮我把这周的工作整理成一份周报</div>
+
+<div class="airow" id="airow">
+  <div class="avatar" id="avatar"><svg viewBox="0 0 256 256" fill="currentColor"><path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144Z"/></svg></div>
+  <div class="think">
+    <div class="thinkline">正在整理本周内容<span class="dots"><span class="dot" id="d1"></span><span class="dot" id="d2"></span><span class="dot" id="d3"></span></span></div>
+    <div class="skel sk1" id="sk1"></div>
+    <div class="skel sk2" id="sk2"></div>
+    <div class="skel sk3" id="sk3"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script>(function(){
+  window.__timelines=window.__timelines||{};
+  var tl=gsap.timeline({paused:true});
+
+  tl.fromTo('#p2-root .ubub',{x:60,opacity:0},{x:0,opacity:1,duration:.55,ease:'power3.out'},0.15);
+  tl.fromTo('#p2-root #avatar',{scale:0,opacity:0},{scale:1,opacity:1,duration:.5,ease:'back.out(1.8)'},0.55);
+  tl.fromTo('#p2-root .think',{x:-30,opacity:0},{x:0,opacity:1,duration:.5,ease:'power3.out'},0.7);
+
+  // dots pulse (finite yoyo)
+  tl.to('#p2-root #d1',{y:-12,opacity:.5,duration:.32,yoyo:true,repeat:9,ease:'sine.inOut'},1.1);
+  tl.to('#p2-root #d2',{y:-12,opacity:.5,duration:.32,yoyo:true,repeat:9,ease:'sine.inOut'},1.22);
+  tl.to('#p2-root #d3',{y:-12,opacity:.5,duration:.32,yoyo:true,repeat:9,ease:'sine.inOut'},1.34);
+
+  // skeleton shimmer sweep (finite)
+  tl.fromTo('#p2-root .sk1',{backgroundPosition:'150% 0'},{backgroundPosition:'-150% 0',duration:1.3,repeat:2,ease:'none'},1.0);
+  tl.fromTo('#p2-root .sk2',{backgroundPosition:'150% 0'},{backgroundPosition:'-150% 0',duration:1.3,repeat:2,ease:'none'},1.15);
+  tl.fromTo('#p2-root .sk3',{backgroundPosition:'150% 0'},{backgroundPosition:'-150% 0',duration:1.3,repeat:2,ease:'none'},1.3);
+  // avatar gentle breathe
+  tl.to('#p2-root #avatar',{scale:1.08,duration:1.1,yoyo:true,repeat:2,ease:'sine.inOut'},1.2);
+
+  tl.to({},{duration:.4},4.6);
+  window.__timelines["p2"]=tl;
+})();</script>
+</div>
+</template>

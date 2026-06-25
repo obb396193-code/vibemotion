@@ -8,6 +8,7 @@
 | `pixel-skill-adventure/` | pixel-arcade | SKILL 大冒险（`coding视频/SKILL大冒险.mp4`） | 横版平台跳跃、**联网找的 CC0 精灵图**(run/idle/jump + 地形 + 西瓜)、GSAP 帧动画 `steps()`、playwright 录屏(`record.js`) |
 | `purple-product/` | purple-glass | 我们做的产品发布 demo | 镀铬标题 + 玻璃规格卡 + 图标点亮；含 **`DESIGN.md` 原始紫色规范** + `HOWTO.md` 搭法 + README，引用技能自带 `assets/purple/` |
 | `gsap-plugins/` | 通用 | GSAP 付费插件实测 | **SplitText 拆字 + DrawSVG 自绘 + MorphSVG 圆→星**，已渲染验证；配 `references/gsap-plugins.md` |
+| `routeB-realistic-ui/` | warm 外壳 + **Route B 技术** | AI 写周报 18s 竖屏（`ai-report.mp4`，有声） | **不是新主题**，是 `realistic-ui-and-web.md` 的「真界面动画」：**扒真字体(本地 woff2)+真图标(Phosphor)+3 子合成+接缝转场+假鼠标+音效**，含真渲成片 |
 
 ## 怎么跑
 - warm / purple（HF）：`cd <目录> && npx hyperframes render . -o out.mp4 -w 1 --resolution <portrait|landscape>`

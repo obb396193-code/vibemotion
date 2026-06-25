@@ -13,3 +13,9 @@ out/
 # rendered outputs (keep the repo light; re-render from source)
 *.mp4
 *.mov
+
+# audio kept out of the public repo (licensing); supply your own. route-B uses no audio anyway.
+*.mp3
+*.wav
+*.m4a
+*.aac
